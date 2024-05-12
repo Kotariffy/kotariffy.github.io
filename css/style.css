@@ -1,5 +1,5 @@
 :root {
-    --max-width:1200px;
+    --max-width:1400px;
     
     --bg-image:url('/src/water1.gif');
     --bg-image2:url('/src/stars3.gif');
@@ -42,6 +42,21 @@
     --dark: #4a564a;
     --darkest: #191f19;
 
+}
+
+@font-face {
+    font-family: "Martancallinedemo";
+    src: url("/src/fonts/Martancallinedemo.ttf");
+}
+
+@font-face {
+    font-family: "BelongFaithRegular";
+    src: url("/src/fonts/BelongFaithRegular.ttf");
+}
+
+@font-face {
+    font-family: "XwisthDemoVersion";
+    src: url("/src/fonts/XwisthDemoVersion.ttf");
 }
 
 * {
@@ -103,7 +118,7 @@ h1 {
     font-style: calc(1, 2, 3);
     font-weight: 400;
     font-stretch: expanded;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Courier';
     font-variant: small-caps;
 
     animation-duration: 1s;
@@ -115,7 +130,7 @@ h2 {
     margin-left: 0%;
     font-size: medium;
     font-weight: 100;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'XwisthDemoVersion';
     animation-duration: 1s;
     animation-name: slidein_h2;
 }
@@ -128,8 +143,9 @@ h2 {
 /* bar section */
 .bar 
 {
-    height: 55px;
-    border:1px solid var(--border-color);
+    height: 30px;
+    border:0px solid var(--border-color);
+    background-image: var(--bg-image);
     background-color: var(--bg-bar-color);
     background-repeat:repeat-x;
     position:relative;
@@ -175,6 +191,8 @@ h2 {
     padding:100px;
 }
 
+
+
 #div1 {
     width:80%;
     flex:1;
@@ -210,12 +228,29 @@ h2 {
     float: right;
     height: 25px;
     width: 25px;
+    background-color: #b24a4a99;
+    color: whitesmoke;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.x-button:hover {
+    float: right;
+    height: 25px;
+    width: 25px;
+    background-color: #ed1515bc;
+    color: rgb(148, 145, 145);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.x-button:active {
+    float: right;
+    height: 25px;
+    width: 25px;
     background-color: #a46e6e7a;
     color: whitesmoke;
     border-radius: 5px 5px 5px 5px;
-
-    
 }
+
 
 .card-explorer {
     height: 26px;
@@ -291,6 +326,7 @@ nav ul a
     padding-bottom:1px;
    
 }
+
 
 /* navigation ends */
 

@@ -3,7 +3,6 @@ let newX = 0, newY = 0, startX = 0, startY = 0;
 const card = document.getElementById('card')
 const card_header = document.getElementById('card-header')
 
-
 card_header.addEventListener('mousedown', mouseDown)
 
 function mouseDown(e) {
@@ -23,8 +22,12 @@ function mouseMove(e) {
     startX = e.clientX
     startY = e.clientY
 
+
     card.style.top = (card.offsetTop - newY)+ 'px'
     card.style.left = (card.offsetLeft - newX) + 'px'
+
+    // card.style.top = (card.offsetTop - newY) + 'px'
+    // card.style.left = (card.offsetLeft - newX) + 'px'
 
     console.log({newX, newY})
     console.log({startX, startY})
