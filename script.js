@@ -11,8 +11,6 @@ function mouseDown(e) {
 
     document.addEventListener('mousemove', mouseMove)
     document.addEventListener('mouseup', mouseUp)
-
-    
 }
 
 function mouseMove(e) {

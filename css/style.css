@@ -9,12 +9,12 @@
     --bg-flex-color: #0f111e;
     --bg-sidebar-color: #090618b1;
     --bg-footer-color: #0f111e;
-    --border-color:#441bd8;
+    --border-color: #6b42ff;
     --scrollbar-color:#a9a29c;
 
-    --font-family:'Verdana';
+    --font-family:'Courier New';
     --font-size:16px;
-    --font-color:#1f80ff;
+    --font-color:#6b42ff;
     
     --header-height:90px;
     --header-bg-position:center center;
