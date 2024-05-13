@@ -8,9 +8,9 @@
     --bg-bar-color: #090618b1;
     --bg-flex-color: #0f111e;
     --bg-sidebar-color: #090618b1;
-    --bg-footer-color: #0f111e;
+    --bg-footer-color: #090618b1;
     --border-color: #6b42ff;
-    --scrollbar-color:#a9a29c;
+    --scrollbar-color:#6b42ff;
 
     --font-family:'Courier New';
     --font-size:16px;
@@ -206,6 +206,7 @@ h2 {
     background-color: var(--bg-sidebar-color);
 
     display:block;
+    
     background-color: #090618b1;
  
     border-radius: 2px 2px 2px 2px;
@@ -219,7 +220,7 @@ h2 {
     border:1px solid var(--border-color);
  
     cursor: pointer;
-    position: fixed;
+    position: absolute;
 
 }
 
@@ -256,7 +257,6 @@ h2 {
     color: whitesmoke;
     border-radius: 5px 5px 5px 5px;
 }
-
 
 .card-explorer {
     height: 26px;
@@ -307,7 +307,7 @@ h2 {
 
 .left {
     margin-right:var(--row-padding);
-    padding-left: 5%;
+    
 }
 
 .right {
@@ -319,9 +319,10 @@ h2 {
 
 nav ul {
     list-style-image: url('/src/emailkitty.gif');
+    list-style-position:outside;
 }
 
-nav ul a 
+nav ul a  
 {
     color:var(--link-color);
     text-decoration:none;
