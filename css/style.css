@@ -102,6 +102,12 @@ body a:hover {
     flex-grow:1;
 }
 
+.draggable {
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+}
+
 #header {
     height: var(--header-height);
     background-size: contain;
@@ -205,7 +211,7 @@ h2 {
     border-radius: 2px 2px 2px 2px;
 }
 
-#card {
+.hidden-div {
     width: 343px;
     height: 397px;
     background-color: #090618b1;
@@ -217,7 +223,7 @@ h2 {
 
 }
 
-.card-header {
+.header {
     color: rgba(139, 222, 212, 0.553);
     background-image: var(--bg-image);
     background-color: var(--border-color);
@@ -282,10 +288,7 @@ h2 {
 }
 
 #card-content {
-  
-    
     height: 90%;
-    
     text-align: center;
 }
 
