@@ -150,8 +150,8 @@ h2 {
 .bar 
 {
     height: 30px;
-    border:0px solid var(--border-color);
-    background-image: var(--bg-image);
+    border:1px solid var(--border-color);
+    /* background-image: var(--bg-image); */
     background-color: var(--bg-bar-color);
     background-repeat:repeat-x;
     position:relative;

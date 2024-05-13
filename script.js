@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+function closeTab(divNumber) {
+    var cardToClose = document.getElementById("card" + divNumber);
+    cardToClose.style.display = "none";
+}
+
 
 // card_header.addEventListener('mousedown', mouseDown)
 
