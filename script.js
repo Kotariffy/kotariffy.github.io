@@ -3,11 +3,7 @@ let offsetX = 0;
 let offsetY = 0;
 let draggedElement = null;
 
-// const card = document.getElementById('card')
-// const card_header = document.getElementById('card-header')
-
 document.addEventListener('DOMContentLoaded', function() {
-
     const draggableElements = document.querySelectorAll(".draggable");
     draggableElements.forEach((element) => {
         element.addEventListener('mousedown', mouseDown);
