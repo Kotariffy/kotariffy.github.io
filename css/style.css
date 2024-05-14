@@ -120,9 +120,9 @@ body a:hover {
 
 h1 {
     color: rgb(211, 239, 118);
-    margin-left: 0%;
+    
     font-style: calc(1, 2, 3);
-    font-weight: 400;
+    font-weight: 100;
     font-stretch: expanded;
     font-family:'Courier';
     font-variant: small-caps;
@@ -133,12 +133,18 @@ h1 {
 
 h2 {
     color: rgb(175, 191, 185);
-    margin-left: 0%;
-    font-size: medium;
+
+    font-size: 100;
     font-weight: 100;
     font-family:'XwisthDemoVersion';
     animation-duration: 1s;
     animation-name: slidein_h2;
+}
+
+h3 {
+    color: rgb(175, 191, 185);
+    font-weight: 100;
+
 }
 
 .row 
@@ -151,6 +157,7 @@ h2 {
 {
     height: 30px;
     border:1px solid var(--border-color);
+    border-radius: 10px 10px 10px 10px;
     /* background-image: var(--bg-image); */
     background-color: var(--bg-bar-color);
     background-repeat:repeat-x;
@@ -189,27 +196,27 @@ h2 {
 
 /* flex section */
 .flex {
-    display:flex;
-   
+    display:flex
 }
 
 .sidebar {
     padding:100px;
+    border-radius: 10px 10px 10px 10px;
 }
 
-
-
-#div1 {
+#content {
     width:80%;
+    padding-top: 2%;
+    padding-left: 2%;
+    border-radius: 10px 10px 10px 10px;
     flex:1;
-    border:2px solid var(--border-color);
+    border:1px solid var(--border-color);
     background-color: var(--bg-sidebar-color);
 
     display:block;
-    
+    font-size: 15px;
     background-color: #090618b1;
- 
-    border-radius: 2px 2px 2px 2px;
+
 }
 
 .hidden-div {
@@ -221,7 +228,18 @@ h2 {
  
     cursor: pointer;
     position: absolute;
+}
 
+#card1 {
+    top: 50%;
+    left: 15%;
+}
+
+#card2 {
+    width: 400px;
+    height: 300px;
+    top: 40%;
+    left: 50%;
 }
 
 .header {
@@ -231,32 +249,50 @@ h2 {
     height: 6%;
 }
 
-.x-button {
+/* --- BUTTONS BEGIN */
+.window {
     float: right;
     height: 25px;
     width: 25px;
+    border-radius: 5px 5px 5px 5px;
     background-color: #b24a4a99;
     color: whitesmoke;
-    border-radius: 5px 5px 5px 5px;
+    
 }
 
-.x-button:hover {
-    float: right;
-    height: 25px;
-    width: 25px;
+.window:hover {
     background-color: #ed1515bc;
     color: rgb(148, 145, 145);
-    border-radius: 5px 5px 5px 5px;
 }
 
-.x-button:active {
-    float: right;
-    height: 25px;
-    width: 25px;
+.window:active {
     background-color: #a46e6e7a;
     color: whitesmoke;
-    border-radius: 5px 5px 5px 5px;
 }
+
+.panel {
+    padding-left: 80px;
+    margin-left: 20px;
+    text-align: center;
+    float: left;
+    height: 15px;
+    width: 15px;
+    object-position: center;
+    background-color: var(--light);
+    color: var(--light);
+    border-radius: 2px 2px 2px 2px;
+}
+
+.panel:hover {
+    background-color: #54a9a4;
+}
+
+.panel:active {
+    background-color: #6e6b24;
+}
+
+/* --- BUTTONS  ENDS*/
+
 
 .card-explorer {
     height: 26px;
@@ -287,10 +323,6 @@ h2 {
     box-shadow: 1px 1px 0px var(--lightest), -1px -1px 0px var(--shadow);
 }
 
-#card-content {
-    height: 90%;
-    text-align: center;
-}
 
 .centerText {
     text-align:center;
