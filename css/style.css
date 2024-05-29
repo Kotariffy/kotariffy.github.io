@@ -232,15 +232,26 @@ h3 {
 
 #card1 {
     top: 50%;
-    left: 15%;
+    left: 12%;
+    height: 200px;
+
 }
 
 #card2 {
     width: 400px;
     height: 300px;
-    top: 40%;
+    top: 60%;
     left: 50%;
 }
+
+#card3 {
+    width: 600px;
+    height: 300px;
+    top: 20%;
+    left: 60%;
+}
+
+
 
 .header {
     color: rgba(139, 222, 212, 0.553);
