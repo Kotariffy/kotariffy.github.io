@@ -252,12 +252,11 @@ h3 {
 }
 
 
-
 .header {
     color: rgba(139, 222, 212, 0.553);
     background-image: var(--bg-image);
     background-color: var(--border-color);
-    height: 6%;
+    height: 22px;
 }
 
 /* --- BUTTONS BEGIN */
