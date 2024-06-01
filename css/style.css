@@ -245,6 +245,11 @@ h3 {
   
 }
 
+#card2 .card-content {
+    height: 80%;
+    overflow-y: scroll;
+}
+
 #card3 {
     width: 600px;
     height: 300px;
@@ -252,14 +257,7 @@ h3 {
     left: 60%;
 }
 
-#card2 .card-content {
 
-    height: 80%;
-   
-   
-
-    overflow-y: scroll;
-}
 
 .header {
     color: rgba(139, 222, 212, 0.553);
@@ -369,7 +367,7 @@ h3 {
 /* navigation begin */
 
 nav ul {
-    list-style-image: url('/src/emailkitty.gif');
+    list-style-image: url('/src/wingedorb.gif');
     list-style-position:outside;
 }
 
