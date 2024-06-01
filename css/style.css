@@ -233,7 +233,7 @@ h3 {
 #card1 {
     top: 50%;
     left: 12%;
-    height: 200px;
+    height: auto;
 
 }
 
@@ -242,6 +242,7 @@ h3 {
     height: 300px;
     top: 60%;
     left: 50%;
+  
 }
 
 #card3 {
@@ -251,6 +252,14 @@ h3 {
     left: 60%;
 }
 
+#card2 .card-content {
+
+    height: 80%;
+   
+   
+
+    overflow-y: scroll;
+}
 
 .header {
     color: rgba(139, 222, 212, 0.553);
