@@ -5,7 +5,7 @@
     --bg-image-header2:url('/src/water1.gif');
     --bg-image-header3:url('/src/502f5cd58e6df31041b735c32ad7f7ee.gif');
 
-    --bg-image2:url('/src/stars3.gif');
+    --bg-image2:url('/src/back.gif');
     --bg-color:#ff1c1c;
     --bg-header-color: #020f5e;
     --bg-bar-color: #090618b1;
@@ -80,7 +80,7 @@ body {
     background-color: #0f111e;
     background-image: var(--bg-image2);
     background-attachment:fixed;
-
+    background-size: cover;
     font-family: var(--font-family);
     font-size: var(--font-size);
     color: var(--font-color);
