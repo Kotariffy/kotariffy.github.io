@@ -269,6 +269,11 @@ p {
     left: 60%;
 }
 
+#card3 .card-content {
+    height: 80%;
+    overflow-y: scroll;
+}
+
 .header {
     color: rgba(139, 222, 212, 0.553);
 
