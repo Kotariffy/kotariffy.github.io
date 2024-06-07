@@ -19,9 +19,9 @@
     --font-size:16px;
     --font-color1:#2f24c1;
     --font-color2:#681e30;
-    --font-color3:#2e15abe5;
+    --font-color3:#42468289;
 
-    --href-color1:#0000ff;
+    --href-color1:#0016bf5e;
     --href-color2:#7a0606;
     
     --header-height:90px;
@@ -91,7 +91,6 @@ body a:hover {
     text-decoration:underline;
 }
 
-
 #container {
     max-width:var(--max-width);
     margin:0 auto;
@@ -101,6 +100,7 @@ body a:hover {
 {
     background-color:var(--bg-color);
 }
+
 .section, section 
 {
     flex-grow:1;
@@ -151,12 +151,10 @@ h3 {
 p {
     color: var(--font-color3);
     text-shadow: -3px 1px 4px var(--href-color2);
-   
 }
 
 p1 {
-    color: var(--font-color2);
-    
+    color: var(--font-color2); 
 }
 
 .row 
@@ -393,6 +391,8 @@ p1 {
 
 .left {
     margin-right:var(--row-padding);
+    padding-left: 5%;
+    padding-top: 1%;
 }
 
 .right {
@@ -412,6 +412,7 @@ nav ul a
     text-decoration:none;
     display: list-item;
     padding-bottom:10px;
+    padding-left: 5px;
 }
 
 /* navigation ends */
