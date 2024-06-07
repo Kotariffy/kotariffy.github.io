@@ -4,57 +4,38 @@
     --bg-image-header1:url('/src/water1.gif');
     --bg-image-header2:url('/src/water1.gif');
     --bg-image-header3:url('/src/502f5cd58e6df31041b735c32ad7f7ee.gif');
-
     --bg-image2:url('/src/back.gif');
+
     --bg-color:#ff1c1c;
-    --bg-header-color: #020f5e;
     --bg-bar-color: #090618b1;
-    --bg-flex-color: #0f111e;
     --bg-sidebar-color: #090618b1;
     --bg-footer-color: #090618b1;
     --border-color: #2c13e9;
-    --scrollbar-color:#0d00ff;
+    
+    --scrollbar-color:#1a0f90;
+    --scrollbar-bg-color:#0802416a;
 
     --font-family:'Courier New';
     --font-size:16px;
-    --font-color:#4223f1;
+    --font-color1:#2f24c1;
+    --font-color2:#681e30;
     
     --header-height:90px;
-    --header-bg-position:center center;
-    --header-bg-size:contain;
-    --header-bg-repeat:no-repeat;
 
     --top-bar-1:url('/src/kitty3d.gif');
     --top-bar-2:url('/src/kitty3d.gif');
     --top-bar-height:50px;
     --top-bar-width:60px;
 
-    --bar-img:url('/src/a4.jpg');
     --row-padding:5px;
-
     --sidebar-width:15%;
 
-    --divider-height:10px;
-    --divider-position:center center;
-
     --contrastbg: #a69f8e;
-    --lightest: #c6bcd6;
-    --light: #898893;
-    --mid: #83699e;
-    --shadow: #351e5a;
-    --dark: #251a4f;
+    --lightest: #b5b1c7;
+    --light: #757881cd;
+    --shadow: #4d474d;
+    --dark: #272042;
     --darkest: #140b1b;
-
-}
-
-@font-face {
-    font-family: "Martancallinedemo";
-    src: url("/src/fonts/Martancallinedemo.ttf");
-}
-
-@font-face {
-    font-family: "BelongFaithRegular";
-    src: url("/src/fonts/BelongFaithRegular.ttf");
 }
 
 @font-face {
@@ -73,7 +54,6 @@
     box-sizing: border-box;
     scrollbar-width: thin;
     scrollbar-color: var(--scrollbar-color);
-    
 }
 
 body {
@@ -83,18 +63,19 @@ body {
     background-size: cover;
     font-family: var(--font-family);
     font-size: var(--font-size);
-    color: var(--font-color);
+    color: var(--font-color1);
 }
 
-body a {
-    
+body a { 
     font-weight:bold;
     text-decoration:none;
+    color: #3639dd;
 }
 
 body a:hover { 
     text-decoration:underline;
 }
+
 
 #container {
     max-width:var(--max-width);
@@ -128,8 +109,7 @@ body a:hover {
 }
 
 h1 {
-    color: rgb(211, 239, 118);
-    
+    color: rgb(211, 239, 118); 
     font-style: calc(1, 2, 3);
     font-weight: 100;
     font-stretch: expanded;
@@ -142,7 +122,6 @@ h1 {
 
 h2 {
     color: rgb(175, 191, 185);
-
     font-size: 100;
     font-weight: 100;
     font-family:'XwisthDemoVersion';
@@ -153,10 +132,14 @@ h2 {
 h3 {
     color: rgb(141, 139, 150);
     font-weight: 1;
-
 }
+
 p {
-    color: var(--font-color);
+    color: var(--font-color1);
+}
+
+p1 {
+    color: var(--font-color2);
 }
 
 .row 
@@ -231,6 +214,12 @@ p {
 
 }
 
+#quote-block {
+    padding: 10px;
+    margin-top: 35%;
+  
+}
+
 .hidden-div {
     width: 343px;
     height: 397px;
@@ -243,40 +232,44 @@ p {
 }
 
 #card1 {
-    top: 50%;
-    left: 12%;
     height: auto;
-
+    top: 60%;
+    left: 6%;
 }
 
 #card2 {
-    width: 400px;
+    width: 500px;
     height: 350px;
-    top: 60%;
-    left: 50%;
-  
+    top: 40%;
+    left: 38%;
+
 }
 
 #card2 .card-content {
-    height: 80%;
+    height: 86%;
+    padding: 5px;
     overflow-y: scroll;
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg-color);
+    scrollbar-width: thin;
 }
 
 #card3 {
-    width: 600px;
+    width: 450px;
     height: 300px;
-    top: 20%;
-    left: 60%;
+    top: 25%;
+    left: 70%;
 }
 
 #card3 .card-content {
-    height: 80%;
+    height: 84%;
+    padding: 5px;
     overflow-y: scroll;
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg-color);
+    scrollbar-width: thin;
 }
 
 .header {
     color: rgba(139, 222, 212, 0.553);
-
     background-size: cover;
     background-color: var(--border-color);
     height: 22px;
@@ -290,27 +283,28 @@ p {
     background-image: var(--bg-image-header2);
 }
 
- #header3 {
+#header3 {
     background-image: var(--bg-image-header3);
 }
+
 /* --- BUTTONS BEGIN */
-.window {
+.exit {
     float: right;
     height: 24px;
     width: 24px;
     border-radius: 1px 1px 1px 1px;
-    border-color: #593c4099;
-    background-color: #9e0b1f99;
-    color: whitesmoke;
+    border-color: #2203035e;
+    background-color: #730b1e69;
+    color: rgba(229, 230, 232, 0.397);
     
 }
 
-.window:hover {
+.exit:hover {
     background-color: #7e1414bc;
     color: rgb(148, 145, 145);
 }
 
-.window:active {
+.exit:active {
     background-color: #a46e6e7a;
     color: whitesmoke;
 }
@@ -338,12 +332,11 @@ p {
 
 /* --- BUTTONS  ENDS*/
 
-
 .card-explorer {
-    height: 26px;
+    height: 20px;
     margin: 1px;
     padding: 3px;
-    padding-top: 5px;
+    padding-top: 2px;
     text-align: left;
     border-top: 1px solid var(--lightest);
     border-left: 1px solid var(--lightest);
@@ -368,7 +361,6 @@ p {
     box-shadow: 1px 1px 0px var(--lightest), -1px -1px 0px var(--shadow);
 }
 
-
 .centerText {
     text-align:center;
 }
@@ -384,7 +376,6 @@ p {
 
 .left {
     margin-right:var(--row-padding);
-    
 }
 
 .right {
@@ -408,14 +399,13 @@ nav ul a
    
 }
 
-
 /* navigation ends */
 
 /* flex section ends*/
 
 #footer 
 {
-    height: 10px;
+    height: 15px;
     border:1px solid var(--border-color);
     background-color: var(--bg-footer-color);
     background-repeat:repeat-x;
@@ -426,13 +416,11 @@ nav ul a
         margin-left: 100%;
         width: 300%;
     }
-
     to {
         margin-left: 0%;
         width: 100%;
     }
 }
-
 
 @keyframes slidein_h2 {
     from {
@@ -445,42 +433,3 @@ nav ul a
         width: 100%;
     }
 }
-
-/* .bubbles 
-{
-    position: relative;
-    display: flex;
-}
-.bubbles span
-{
-    position: relative;
-    width: 10px;
-    height: 10px;
-    background-color: rgb(131, 107, 217);
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px rgb(52, 61, 76),
-    0 0 50px rgb(107, 217, 204),
-    0 0 100px rgb(107, 217, 204);
-    animation: animate 15s linear infinite;
-    animation-duration: calc(100s / var(--i));
-}
-.bubbles span:nth-child(even)
-{
-    background: #821515;
-    box-shadow: 0 0 0 10px #321519,
-    0 0 50px rgb(166, 9, 56),
-    0 0 100px rgb(217, 107, 158);
-}
-
-@keyframes animate 
-{
-    0%
-    {
-        transform: translateY(100vh) scale(0);
-    }
-    100%
-    {
-        transform: translateY(-10vh) scale(1);
-    }
-} */
