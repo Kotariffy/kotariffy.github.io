@@ -17,6 +17,10 @@
 
     --font-family:'Courier New';
     --font-size:16px;
+
+    --font-header-color1:rgb(211, 239, 118);
+    --font-header-color2:rgb(175, 191, 185);
+
     --font-color1:#2f24c1;
     --font-color2:#681e30;
     --font-color3:#42468289;
@@ -124,18 +128,19 @@ body a:hover {
 }
 
 h1 {
-    color: rgb(211, 239, 118); 
+    color: var(--font-header-color1); 
+    text-shadow: 1px 1px 10px var(--font-header-color1), 1px -1px 3px var(--font-header-color1), -20px -2px 20px var(--font-header-color1);
+
     font-weight: 100;
     font-stretch: expanded;
     font-family:'Courier';
     font-variant: small-caps;
-
     animation-duration: 1s;
     animation-name: slidein_h1;
 }
 
 h2 {
-    color: rgb(175, 191, 185);
+    color: var(--font-header-color2);
     font-size: 100;
     font-weight: 100;
     font-family:'XwisthDemoVersion';
