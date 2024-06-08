@@ -81,7 +81,7 @@ body {
 
 #body-about {
     background: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 
@@ -425,6 +425,10 @@ nav ul a
 }
 
 /* navigation ends */
+
+#mainframe {
+    scrollbar-color: #30333024;
+}
 
 /* flex section ends*/
 
